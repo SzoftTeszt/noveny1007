@@ -14,6 +14,8 @@ export class NovenyekListComponent {
   oszlopok:any;
   tetelek:any;
   
+  keresoSzo=""
+
   constructor(private base:BaseService, 
     private config:ConfigService,
     private kosar:KosarService){

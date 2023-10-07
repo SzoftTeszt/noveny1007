@@ -1,5 +1,10 @@
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Keresés: </span>
+    <input [(ngModel)]="keresoSzo"  type="text" class="form-control">
+</div>
+
 <div class="row g-4">
-    <div *ngFor="let noveny of novenyek" class="col-12 col-md-6 col-lg-4 col-xl-3">
+    <div *ngFor="let noveny of novenyek|filter:keresoSzo" class="col-12 col-md-6 col-lg-4 col-xl-3">
 
         <div class="card h-100">
             <img [src]="noveny.kepUrl" class="card-img-top" alt="Növény kép">
