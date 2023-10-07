@@ -10,11 +10,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Environments } from './environments';
 import { NovenyComponent } from './part/noveny/noveny.component';
 import { FormsModule } from '@angular/forms';
+import { NovenyekListComponent } from './novenyek-list/novenyek-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NovenyComponent
+    NovenyComponent,
+    NovenyekListComponent
   ],
   imports: [
     BrowserModule,
