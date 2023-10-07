@@ -8,17 +8,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Environments } from './environments';
+import { NovenyComponent } from './part/noveny/noveny.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NovenyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     AngularFireModule.initializeApp(Environments.firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
